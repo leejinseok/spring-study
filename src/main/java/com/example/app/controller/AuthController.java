@@ -25,7 +25,6 @@ public class AuthController {
     Map<String, String> appDetails = new HashMap<>();
     appDetails.put("name", appProperties.getName());
     appDetails.put("key", awsProperties.getKey());
-
     return appDetails;
   }
 }
