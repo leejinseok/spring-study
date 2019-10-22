@@ -15,7 +15,6 @@ public class AuthController {
   @Autowired
   private AppProperties appProperties;
 
-
   @GetMapping("/login")
   public Map<String, String> login() {
     Map<String, String> map = new HashMap<>();
