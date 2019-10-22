@@ -2,7 +2,6 @@ package com.example.app.controller;
 
 import com.example.app.config.AppProperties;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.AutoConfigurationPackage;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +14,7 @@ import java.util.Map;
 public class AuthController {
   @Autowired
   private AppProperties appProperties;
+
 
   @GetMapping("/login")
   public Map<String, String> login() {
