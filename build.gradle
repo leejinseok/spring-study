@@ -1,0 +1,24 @@
+plugins {
+    id 'org.springframework.boot' version '2.2.0.RELEASE'
+    id "com.gorylenko.gradle-git-properties" version "1.5.1"
+}
+
+apply plugin: 'java'
+apply plugin: 'io.spring.dependency-management'
+
+ext {
+
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    annotationProcessor('org.springframework.boot:spring-boot-configuration-processor')
+    compile('org.springframework.boot:spring-boot-configuration-processor')
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+}
+
+repositories {
+    mavenCentral()
+}
